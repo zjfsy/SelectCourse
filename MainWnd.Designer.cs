@@ -113,7 +113,7 @@
             // 
             this.labelCnl.AutoSize = true;
             this.labelCnl.Font = new System.Drawing.Font("幼圆", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labelCnl.Location = new System.Drawing.Point(250, 200);
+            this.labelCnl.Location = new System.Drawing.Point(200, 205);
             this.labelCnl.Name = "labelCnl";
             this.labelCnl.Size = new System.Drawing.Size(154, 24);
             this.labelCnl.TabIndex = 6;
@@ -124,7 +124,7 @@
             // 
             this.labelAbt.AutoSize = true;
             this.labelAbt.Font = new System.Drawing.Font("幼圆", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labelAbt.Location = new System.Drawing.Point(250, 160);
+            this.labelAbt.Location = new System.Drawing.Point(200, 165);
             this.labelAbt.Name = "labelAbt";
             this.labelAbt.Size = new System.Drawing.Size(154, 24);
             this.labelAbt.TabIndex = 5;
@@ -135,7 +135,7 @@
             // 
             this.labelSel.AutoSize = true;
             this.labelSel.Font = new System.Drawing.Font("幼圆", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labelSel.Location = new System.Drawing.Point(250, 120);
+            this.labelSel.Location = new System.Drawing.Point(200, 125);
             this.labelSel.Name = "labelSel";
             this.labelSel.Size = new System.Drawing.Size(154, 24);
             this.labelSel.TabIndex = 4;
@@ -146,7 +146,7 @@
             // 
             this.labelCou.AutoSize = true;
             this.labelCou.Font = new System.Drawing.Font("幼圆", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labelCou.Location = new System.Drawing.Point(250, 80);
+            this.labelCou.Location = new System.Drawing.Point(200, 85);
             this.labelCou.Name = "labelCou";
             this.labelCou.Size = new System.Drawing.Size(154, 24);
             this.labelCou.TabIndex = 3;
@@ -157,7 +157,7 @@
             // 
             this.labelStu.AutoSize = true;
             this.labelStu.Font = new System.Drawing.Font("幼圆", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.labelStu.Location = new System.Drawing.Point(250, 40);
+            this.labelStu.Location = new System.Drawing.Point(200, 45);
             this.labelStu.Name = "labelStu";
             this.labelStu.Size = new System.Drawing.Size(154, 24);
             this.labelStu.TabIndex = 2;
