@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8A72678F-04C7-4D33-A02B-07F7290705AE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>SelectCourse</RootNamespace>
+    <AssemblyName>SelectCourse</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=8.0.15.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="About.Designer.cs">
+      <DependentUpon>About.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddCou.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddCou.Designer.cs">
+      <DependentUpon>AddCou.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddSel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddSel.Designer.cs">
+      <DependentUpon>AddSel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddStu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddStu.Designer.cs">
+      <DependentUpon>AddStu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DBO.cs" />
+    <Compile Include="DelCou.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DelCou.Designer.cs">
+      <DependentUpon>DelCou.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DelSel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DelSel.Designer.cs">
+      <DependentUpon>DelSel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdCou.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdCou.Designer.cs">
+      <DependentUpon>UpdCou.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdSel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdSel.Designer.cs">
+      <DependentUpon>UpdSel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdStu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdStu.Designer.cs">
+      <DependentUpon>UpdStu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DelStu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DelStu.Designer.cs">
+      <DependentUpon>DelStu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainWnd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainWnd.Designer.cs">
+      <DependentUpon>MainWnd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SignIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SignIn.Designer.cs">
+      <DependentUpon>SignIn.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="About.resx">
+      <DependentUpon>About.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddCou.resx">
+      <DependentUpon>AddCou.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddSel.resx">
+      <DependentUpon>AddSel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddStu.resx">
+      <DependentUpon>AddStu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DelCou.resx">
+      <DependentUpon>DelCou.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DelSel.resx">
+      <DependentUpon>DelSel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdCou.resx">
+      <DependentUpon>UpdCou.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdSel.resx">
+      <DependentUpon>UpdSel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdStu.resx">
+      <DependentUpon>UpdStu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DelStu.resx">
+      <DependentUpon>DelStu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainWnd.resx">
+      <DependentUpon>MainWnd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="SignIn.resx">
+      <DependentUpon>SignIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\bg.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
