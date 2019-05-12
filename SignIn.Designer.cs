@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DialogSign));
             this.signOK = new System.Windows.Forms.Button();
             this.signCL = new System.Windows.Forms.Button();
             this.untext = new System.Windows.Forms.TextBox();
@@ -105,6 +106,7 @@
             this.Controls.Add(this.signCL);
             this.Controls.Add(this.signOK);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "DialogSign";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

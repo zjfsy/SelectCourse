@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DialogAddCou));
             this.gbox = new System.Windows.Forms.GroupBox();
             this.inf6 = new System.Windows.Forms.TextBox();
             this.inf5 = new System.Windows.Forms.TextBox();
@@ -207,6 +208,7 @@
             this.Controls.Add(this.btn1);
             this.Controls.Add(this.gbox);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "DialogAddCou";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;

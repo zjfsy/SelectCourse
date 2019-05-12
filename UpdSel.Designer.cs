@@ -28,21 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DialogUpdSel));
             this.gbox = new System.Windows.Forms.GroupBox();
+            this.chk2 = new System.Windows.Forms.CheckBox();
+            this.chk1 = new System.Windows.Forms.CheckBox();
+            this.inf3 = new System.Windows.Forms.TextBox();
+            this.inf2 = new System.Windows.Forms.TextBox();
+            this.btn0 = new System.Windows.Forms.Button();
+            this.inf1 = new System.Windows.Forms.TextBox();
+            this.inf0 = new System.Windows.Forms.TextBox();
+            this.lab3 = new System.Windows.Forms.Label();
+            this.lab2 = new System.Windows.Forms.Label();
+            this.lab1 = new System.Windows.Forms.Label();
+            this.lab0 = new System.Windows.Forms.Label();
             this.btn1 = new System.Windows.Forms.Button();
             this.btn2 = new System.Windows.Forms.Button();
             this.btn3 = new System.Windows.Forms.Button();
-            this.lab0 = new System.Windows.Forms.Label();
-            this.lab1 = new System.Windows.Forms.Label();
-            this.lab2 = new System.Windows.Forms.Label();
-            this.lab3 = new System.Windows.Forms.Label();
-            this.inf0 = new System.Windows.Forms.TextBox();
-            this.inf1 = new System.Windows.Forms.TextBox();
-            this.btn0 = new System.Windows.Forms.Button();
-            this.inf2 = new System.Windows.Forms.TextBox();
-            this.inf3 = new System.Windows.Forms.TextBox();
-            this.chk1 = new System.Windows.Forms.CheckBox();
-            this.chk2 = new System.Windows.Forms.CheckBox();
             this.gbox.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -66,6 +67,104 @@
             this.gbox.TabIndex = 0;
             this.gbox.TabStop = false;
             this.gbox.Text = "选课信息";
+            // 
+            // chk2
+            // 
+            this.chk2.AutoSize = true;
+            this.chk2.Location = new System.Drawing.Point(165, 98);
+            this.chk2.Name = "chk2";
+            this.chk2.Size = new System.Drawing.Size(48, 16);
+            this.chk2.TabIndex = 10;
+            this.chk2.Text = "更改";
+            this.chk2.UseVisualStyleBackColor = true;
+            this.chk2.CheckedChanged += new System.EventHandler(this.Chk2Changed);
+            // 
+            // chk1
+            // 
+            this.chk1.AutoSize = true;
+            this.chk1.Location = new System.Drawing.Point(165, 73);
+            this.chk1.Name = "chk1";
+            this.chk1.Size = new System.Drawing.Size(48, 16);
+            this.chk1.TabIndex = 9;
+            this.chk1.Text = "更改";
+            this.chk1.UseVisualStyleBackColor = true;
+            this.chk1.CheckedChanged += new System.EventHandler(this.Chk1Changed);
+            // 
+            // inf3
+            // 
+            this.inf3.Enabled = false;
+            this.inf3.Location = new System.Drawing.Point(60, 95);
+            this.inf3.Name = "inf3";
+            this.inf3.Size = new System.Drawing.Size(100, 21);
+            this.inf3.TabIndex = 8;
+            // 
+            // inf2
+            // 
+            this.inf2.Enabled = false;
+            this.inf2.Location = new System.Drawing.Point(60, 70);
+            this.inf2.Name = "inf2";
+            this.inf2.Size = new System.Drawing.Size(100, 21);
+            this.inf2.TabIndex = 7;
+            // 
+            // btn0
+            // 
+            this.btn0.Location = new System.Drawing.Point(165, 28);
+            this.btn0.Name = "btn0";
+            this.btn0.Size = new System.Drawing.Size(45, 30);
+            this.btn0.TabIndex = 6;
+            this.btn0.Text = "查找";
+            this.btn0.UseVisualStyleBackColor = true;
+            this.btn0.Click += new System.EventHandler(this.BtnSrhClick);
+            // 
+            // inf1
+            // 
+            this.inf1.Location = new System.Drawing.Point(60, 45);
+            this.inf1.Name = "inf1";
+            this.inf1.Size = new System.Drawing.Size(100, 21);
+            this.inf1.TabIndex = 5;
+            // 
+            // inf0
+            // 
+            this.inf0.Location = new System.Drawing.Point(60, 20);
+            this.inf0.Name = "inf0";
+            this.inf0.Size = new System.Drawing.Size(100, 21);
+            this.inf0.TabIndex = 4;
+            // 
+            // lab3
+            // 
+            this.lab3.AutoSize = true;
+            this.lab3.Location = new System.Drawing.Point(5, 100);
+            this.lab3.Name = "lab3";
+            this.lab3.Size = new System.Drawing.Size(53, 12);
+            this.lab3.TabIndex = 3;
+            this.lab3.Text = "成　　绩";
+            // 
+            // lab2
+            // 
+            this.lab2.AutoSize = true;
+            this.lab2.Location = new System.Drawing.Point(5, 75);
+            this.lab2.Name = "lab2";
+            this.lab2.Size = new System.Drawing.Size(53, 12);
+            this.lab2.TabIndex = 2;
+            this.lab2.Text = "选课年份";
+            // 
+            // lab1
+            // 
+            this.lab1.AutoSize = true;
+            this.lab1.Location = new System.Drawing.Point(5, 50);
+            this.lab1.Name = "lab1";
+            this.lab1.Size = new System.Drawing.Size(53, 12);
+            this.lab1.TabIndex = 1;
+            this.lab1.Text = "课程编号";
+            // 
+            // lab0
+            // 
+            this.lab0.AutoSize = true;
+            this.lab0.Location = new System.Drawing.Point(5, 25);
+            this.lab0.Name = "lab0";
+            this.lab0.Size = new System.Drawing.Size(53, 12);
+            this.lab0.TabIndex = 0;
+            this.lab0.Text = "学生学号";
             // 
             // btn1
             // 
@@ -97,104 +196,6 @@
             this.btn3.UseVisualStyleBackColor = true;
             this.btn3.Click += new System.EventHandler(this.BtnCnlClick);
             // 
-            // lab0
-            // 
-            this.lab0.AutoSize = true;
-            this.lab0.Location = new System.Drawing.Point(5, 25);
-            this.lab0.Name = "lab0";
-            this.lab0.Size = new System.Drawing.Size(53, 12);
-            this.lab0.TabIndex = 0;
-            this.lab0.Text = "学生学号";
-            // 
-            // lab1
-            // 
-            this.lab1.AutoSize = true;
-            this.lab1.Location = new System.Drawing.Point(5, 50);
-            this.lab1.Name = "lab1";
-            this.lab1.Size = new System.Drawing.Size(53, 12);
-            this.lab1.TabIndex = 1;
-            this.lab1.Text = "课程编号";
-            // 
-            // lab2
-            // 
-            this.lab2.AutoSize = true;
-            this.lab2.Location = new System.Drawing.Point(5, 75);
-            this.lab2.Name = "lab2";
-            this.lab2.Size = new System.Drawing.Size(53, 12);
-            this.lab2.TabIndex = 2;
-            this.lab2.Text = "选课年份";
-            // 
-            // lab3
-            // 
-            this.lab3.AutoSize = true;
-            this.lab3.Location = new System.Drawing.Point(5, 100);
-            this.lab3.Name = "lab3";
-            this.lab3.Size = new System.Drawing.Size(53, 12);
-            this.lab3.TabIndex = 3;
-            this.lab3.Text = "成　　绩";
-            // 
-            // inf0
-            // 
-            this.inf0.Location = new System.Drawing.Point(60, 20);
-            this.inf0.Name = "inf0";
-            this.inf0.Size = new System.Drawing.Size(100, 21);
-            this.inf0.TabIndex = 4;
-            // 
-            // inf1
-            // 
-            this.inf1.Location = new System.Drawing.Point(60, 45);
-            this.inf1.Name = "inf1";
-            this.inf1.Size = new System.Drawing.Size(100, 21);
-            this.inf1.TabIndex = 5;
-            // 
-            // btn0
-            // 
-            this.btn0.Location = new System.Drawing.Point(165, 28);
-            this.btn0.Name = "btn0";
-            this.btn0.Size = new System.Drawing.Size(45, 30);
-            this.btn0.TabIndex = 6;
-            this.btn0.Text = "查找";
-            this.btn0.UseVisualStyleBackColor = true;
-            this.btn0.Click += new System.EventHandler(this.BtnSrhClick);
-            // 
-            // inf2
-            // 
-            this.inf2.Enabled = false;
-            this.inf2.Location = new System.Drawing.Point(60, 70);
-            this.inf2.Name = "inf2";
-            this.inf2.Size = new System.Drawing.Size(100, 21);
-            this.inf2.TabIndex = 7;
-            // 
-            // inf3
-            // 
-            this.inf3.Enabled = false;
-            this.inf3.Location = new System.Drawing.Point(60, 95);
-            this.inf3.Name = "inf3";
-            this.inf3.Size = new System.Drawing.Size(100, 21);
-            this.inf3.TabIndex = 8;
-            // 
-            // chk1
-            // 
-            this.chk1.AutoSize = true;
-            this.chk1.Location = new System.Drawing.Point(165, 73);
-            this.chk1.Name = "chk1";
-            this.chk1.Size = new System.Drawing.Size(48, 16);
-            this.chk1.TabIndex = 9;
-            this.chk1.Text = "更改";
-            this.chk1.UseVisualStyleBackColor = true;
-            this.chk1.CheckedChanged += new System.EventHandler(this.Chk1Changed);
-            // 
-            // chk2
-            // 
-            this.chk2.AutoSize = true;
-            this.chk2.Location = new System.Drawing.Point(165, 98);
-            this.chk2.Name = "chk2";
-            this.chk2.Size = new System.Drawing.Size(48, 16);
-            this.chk2.TabIndex = 10;
-            this.chk2.Text = "更改";
-            this.chk2.UseVisualStyleBackColor = true;
-            this.chk2.CheckedChanged += new System.EventHandler(this.Chk2Changed);
-            // 
             // DialogUpdSel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -207,6 +208,7 @@
             this.Controls.Add(this.btn1);
             this.Controls.Add(this.gbox);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "DialogUpdSel";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;

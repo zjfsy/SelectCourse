@@ -68,7 +68,14 @@ namespace SelectCourse
             MySqlConnection con = new MySqlConnection(ser);
             con.Open();
             MySqlCommand com = new MySqlCommand(cmd, con);
-            com.ExecuteReader();
+            try
+            {
+                com.ExecuteReader();
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.Message);
+            }
             con.Close();
         }
         public static void Update(string cmd)
@@ -76,7 +83,14 @@ namespace SelectCourse
             MySqlConnection con = new MySqlConnection(ser);
             con.Open();
             MySqlCommand com = new MySqlCommand(cmd, con);
-            com.ExecuteReader();
+            try
+            {
+                com.ExecuteReader();
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.Message);
+            }
             con.Close();
         }
         private static readonly string ser = "server=localhost;port=3306;user id=root;password=ZJF19990107;database=register";

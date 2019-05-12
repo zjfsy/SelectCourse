@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DialogUpdStu));
             this.gbox = new System.Windows.Forms.GroupBox();
             this.btn0 = new System.Windows.Forms.Button();
             this.chk5 = new System.Windows.Forms.CheckBox();
@@ -294,6 +295,7 @@
             this.Controls.Add(this.btn2);
             this.Controls.Add(this.gbox);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "DialogUpdStu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;

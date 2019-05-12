@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DialogDelStu));
             this.idlb = new System.Windows.Forms.Label();
             this.idtb = new System.Windows.Forms.TextBox();
             this.btn1 = new System.Windows.Forms.Button();
@@ -83,6 +84,7 @@
             this.Controls.Add(this.idtb);
             this.Controls.Add(this.idlb);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "DialogDelStu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;

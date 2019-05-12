@@ -28,15 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DialogAddSel));
             this.gbox = new System.Windows.Forms.GroupBox();
-            this.lab1 = new System.Windows.Forms.Label();
-            this.lab2 = new System.Windows.Forms.Label();
-            this.lab3 = new System.Windows.Forms.Label();
-            this.lab4 = new System.Windows.Forms.Label();
-            this.inf1 = new System.Windows.Forms.TextBox();
-            this.inf2 = new System.Windows.Forms.TextBox();
-            this.inf3 = new System.Windows.Forms.TextBox();
             this.inf4 = new System.Windows.Forms.TextBox();
+            this.inf3 = new System.Windows.Forms.TextBox();
+            this.inf2 = new System.Windows.Forms.TextBox();
+            this.inf1 = new System.Windows.Forms.TextBox();
+            this.lab4 = new System.Windows.Forms.Label();
+            this.lab3 = new System.Windows.Forms.Label();
+            this.lab2 = new System.Windows.Forms.Label();
+            this.lab1 = new System.Windows.Forms.Label();
             this.btn1 = new System.Windows.Forms.Button();
             this.btn2 = new System.Windows.Forms.Button();
             this.btn3 = new System.Windows.Forms.Button();
@@ -61,32 +62,33 @@
             this.gbox.TabStop = false;
             this.gbox.Text = "选课信息";
             // 
-            // lab1
+            // inf4
             // 
-            this.lab1.AutoSize = true;
-            this.lab1.Location = new System.Drawing.Point(5, 25);
-            this.lab1.Name = "lab1";
-            this.lab1.Size = new System.Drawing.Size(53, 12);
-            this.lab1.TabIndex = 0;
-            this.lab1.Text = "学生学号";
+            this.inf4.Location = new System.Drawing.Point(64, 95);
+            this.inf4.Name = "inf4";
+            this.inf4.Size = new System.Drawing.Size(100, 21);
+            this.inf4.TabIndex = 7;
             // 
-            // lab2
+            // inf3
             // 
-            this.lab2.AutoSize = true;
-            this.lab2.Location = new System.Drawing.Point(5, 50);
-            this.lab2.Name = "lab2";
-            this.lab2.Size = new System.Drawing.Size(53, 12);
-            this.lab2.TabIndex = 1;
-            this.lab2.Text = "课程编号";
+            this.inf3.Location = new System.Drawing.Point(64, 70);
+            this.inf3.Name = "inf3";
+            this.inf3.Size = new System.Drawing.Size(100, 21);
+            this.inf3.TabIndex = 6;
             // 
-            // lab3
+            // inf2
             // 
-            this.lab3.AutoSize = true;
-            this.lab3.Location = new System.Drawing.Point(5, 75);
-            this.lab3.Name = "lab3";
-            this.lab3.Size = new System.Drawing.Size(53, 12);
-            this.lab3.TabIndex = 2;
-            this.lab3.Text = "选课年份";
+            this.inf2.Location = new System.Drawing.Point(64, 45);
+            this.inf2.Name = "inf2";
+            this.inf2.Size = new System.Drawing.Size(100, 21);
+            this.inf2.TabIndex = 5;
+            // 
+            // inf1
+            // 
+            this.inf1.Location = new System.Drawing.Point(64, 20);
+            this.inf1.Name = "inf1";
+            this.inf1.Size = new System.Drawing.Size(100, 21);
+            this.inf1.TabIndex = 4;
             // 
             // lab4
             // 
@@ -97,33 +99,32 @@
             this.lab4.TabIndex = 3;
             this.lab4.Text = "成　　绩";
             // 
-            // inf1
+            // lab3
             // 
-            this.inf1.Location = new System.Drawing.Point(64, 20);
-            this.inf1.Name = "inf1";
-            this.inf1.Size = new System.Drawing.Size(100, 21);
-            this.inf1.TabIndex = 4;
+            this.lab3.AutoSize = true;
+            this.lab3.Location = new System.Drawing.Point(5, 75);
+            this.lab3.Name = "lab3";
+            this.lab3.Size = new System.Drawing.Size(53, 12);
+            this.lab3.TabIndex = 2;
+            this.lab3.Text = "选课年份";
             // 
-            // inf2
+            // lab2
             // 
-            this.inf2.Location = new System.Drawing.Point(64, 45);
-            this.inf2.Name = "inf2";
-            this.inf2.Size = new System.Drawing.Size(100, 21);
-            this.inf2.TabIndex = 5;
+            this.lab2.AutoSize = true;
+            this.lab2.Location = new System.Drawing.Point(5, 50);
+            this.lab2.Name = "lab2";
+            this.lab2.Size = new System.Drawing.Size(53, 12);
+            this.lab2.TabIndex = 1;
+            this.lab2.Text = "课程编号";
             // 
-            // inf3
+            // lab1
             // 
-            this.inf3.Location = new System.Drawing.Point(64, 70);
-            this.inf3.Name = "inf3";
-            this.inf3.Size = new System.Drawing.Size(100, 21);
-            this.inf3.TabIndex = 6;
-            // 
-            // inf4
-            // 
-            this.inf4.Location = new System.Drawing.Point(64, 95);
-            this.inf4.Name = "inf4";
-            this.inf4.Size = new System.Drawing.Size(100, 21);
-            this.inf4.TabIndex = 7;
+            this.lab1.AutoSize = true;
+            this.lab1.Location = new System.Drawing.Point(5, 25);
+            this.lab1.Name = "lab1";
+            this.lab1.Size = new System.Drawing.Size(53, 12);
+            this.lab1.TabIndex = 0;
+            this.lab1.Text = "学生学号";
             // 
             // btn1
             // 
@@ -167,6 +168,7 @@
             this.Controls.Add(this.btn1);
             this.Controls.Add(this.gbox);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "DialogAddSel";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
