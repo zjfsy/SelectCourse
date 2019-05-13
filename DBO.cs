@@ -33,7 +33,7 @@ namespace SelectCourse
             lvw.Columns.Add("rows", 40, HorizontalAlignment.Center);
             for (int i = 0; i < rdr.FieldCount; i++)
             {
-                lvw.Columns.Add(rdr.GetName(i), 50, HorizontalAlignment.Center);
+                lvw.Columns.Add(rdr.GetName(i), 60, HorizontalAlignment.Center);
             }
             for (int i = 1; rdr.Read(); i++)
             {
